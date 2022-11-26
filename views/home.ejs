@@ -1,0 +1,29 @@
+<%- include("partials/header") %>
+    <!--this is to seperate your website files and we change the dirwctory to partials which applies to both header ad footer
+-->
+
+    <h1>
+
+        Home</h1>
+    <p>
+        <%= startingContent %>
+
+    </p>
+    <!--
+posts.forEach(function(post){ %>
+    console.log(post.title);
+
+    -->
+
+    <% for(item of posts){ %>
+        <h3>
+            <%= item.title %>
+        </h3>
+        <a href="/posts/<%= item.id %>">
+            <button>Read More</button>
+        </a>
+        <hr>
+        <% } %>
+
+
+            <%- include("partials/footer") %>
