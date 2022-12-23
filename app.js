@@ -24,7 +24,7 @@ app.use(express.static("public"));
 var posts = [];
 
 const randomId = () => {
-    return Math.random().toString(36).substr(2, 9);
+    return Math.random().toString(36).substr(2, 9); //choosing the starting character and the character length
 }
 
 app.get("/", function(req, res) {
