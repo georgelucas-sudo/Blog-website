@@ -1,0 +1,18 @@
+db.products.insertOne({_id: 1,
+name:"Pen",
+price: 0.80,
+stock:12,
+reviews: [
+{
+    authorName: "James",
+    rating: 5,
+    review: "Fantasic"
+},
+{
+authorName: "Jono",
+rating: 5,
+review:  "The best pen I've used in my life."
+
+}
+
+]})
